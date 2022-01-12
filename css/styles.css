@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fruktur&family=Karla:ital,wght@1,300&family=Praise&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-nav {
+    float: left;
+    background-color: grey;
+    height: 100vh;
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.white {
+    background-color: white;
+    padding: 0.5%;
+}
+
+.menucentro {
+    font-size: xxx-large;
+    background-color: grey;
+}
+
+
+/* Otras clases */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+#card-1 {
+    background-image: url(../img/Pisaje\ 2.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url(../img/Paisaje\ 3.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url(../img/Cocacola.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url(../img/Pisaje\ 4.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+
+/*img {
+    width: 100%;
+}
+*/
+
+article {
+    color: black;
+    margin: 0%;
+    background-color: gray;
+}
+
+footer {
+    color: black;
+    margin: 0%;
+    background-color: gray;
+}
+
+header {
+    height: 100vh;
+    background-image: url(../img/Pisaje\ 1.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    #caja-10 {
+        width: 100%;
+    }
+    .column-nav,
+    .column-75 {
+        width: 100%;
+    }
+}
